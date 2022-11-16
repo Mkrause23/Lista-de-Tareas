@@ -1,2 +1,4 @@
 # Lista-de-Tareas
-Sencillo blog para registrar notas, recordatorios, tareas, etc.
+Sencillo blog hecho con HTML, CSS y JS para registrar notas, recordatorios, tareas, etc.
+
+Cada nota que hacemos quedar registrada en la pagina. Cuenta con funciones de "eliminar tarea" y "tarea cumplida"
