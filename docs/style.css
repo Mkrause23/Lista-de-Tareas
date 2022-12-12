@@ -7,16 +7,14 @@
 }
 
 :root {
-   --blue-light: #00e48c;
-   --purple:#9a67ea;
-   --blue-light:#04d4b8;
-   --blue-dark:#002042;
-   --green: #2c7b90;
+   --green-light: #00e48c;
+   --blue-dark: #002042;
+   --light-blue: #2c7b90;
 
 }
 
 body {
-    background:linear-gradient(45deg, #000000, #002955);
+    background: #00152b;
     height: 100vh;   
     font-family: 'Prompt', sans-serif;
 
@@ -29,32 +27,23 @@ body {
     margin: 0 auto;
 }
 
-/*PERFIL*/
-
-
-
 .perfil h1 {
-    color: var(--blue-light);
+    color: var(--green-light);
 }
 
 .perfil span {
-    color: var(--blue-light);
+    color: var(--green-light);
     letter-spacing: 1px;
 }
 
 #fecha {
-    color: var(--blue-light);
+    color: var(--green-light);
     padding: 50px 0 5px 0px;
 
 }
 
-
-
-
-/*AGREGAR TAREA*/
-
 .agregar-tarea {
-    background-color: #01172e ;
+    background: linear-gradient(to bottom,var(--blue-dark), #000000);
     border-radius: 15px;
     height: 70px;
     display: flex;
@@ -69,18 +58,19 @@ body {
     height: 100%;
     border-radius: 8px;
     border: none; 
-    background-color: #01172e;
+    background-color:linear-gradient(to bottom,var(--blue-dark), #000000);;
     padding-left: 10px;
+    color: var(--green-light);
 
 }
 .agregar-tarea input::placeholder {
    font-size: 1.1rem;
-   color: var(--blue-light);
+   color: var(--green-light);
 }
 
 .agregar-tarea i{
     font-size: 50px;
-    color: var(--blue-light);
+    color: var(--green-light);
 
 }
 .agregar-tarea i:hover {
@@ -88,12 +78,8 @@ body {
     cursor: pointer;
 }
 
-
-
-/*SECCION DE TAREA */
-
 .seccion-tarea h3 {
-    color: var(--blue-light);
+    color: var(--green-light);
     margin-bottom: 20px;
 }
 
@@ -104,7 +90,7 @@ body {
     background: linear-gradient(to bottom,var(--blue-dark), #000000);
     border-radius: 15px;
     padding: 10px;
-    color: var(--blue-light);
+    color: var(--green-light);
     margin: 5px 0;
 
 }
@@ -117,9 +103,8 @@ body {
 
 }
 
-
 .seccion-tarea i:hover {
-    color: var(--blue-light);
+    color: var(--green-light);
     cursor: pointer;
 }
 
@@ -127,3 +112,26 @@ body {
     text-decoration: line-through;
     color : #006b5d;
 } 
+
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    color: var(--green-light);
+  }
+  
+  footer > p {
+    margin: 2rem;
+  }
+  
+  footer i {
+    vertical-align: middle;
+  }
+  
+  @media (max-width: 28.75em) {
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
